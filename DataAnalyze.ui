@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1098</width>
-    <height>690</height>
+    <width>1282</width>
+    <height>693</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -108,10 +108,10 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>200</x>
       <y>100</y>
       <width>1071</width>
-      <height>561</height>
+      <height>571</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -127,7 +127,7 @@
         <x>10</x>
         <y>10</y>
         <width>1041</width>
-        <height>511</height>
+        <height>521</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout"/>
@@ -156,6 +156,16 @@
       <y>70</y>
       <width>87</width>
       <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_KeyName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>181</width>
+      <height>571</height>
      </rect>
     </property>
    </widget>

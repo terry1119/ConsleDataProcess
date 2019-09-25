@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\learn\python_workspace\ShipDataProcess\DataAnalyze.ui'
+# Form implementation generated from reading ui file 'd:\hf_work\python_work\ConsleDataProcess\DataAnalyze.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_DataAnalyze(object):
     def setupUi(self, DataAnalyze):
         DataAnalyze.setObjectName("DataAnalyze")
-        DataAnalyze.resize(1098, 690)
+        DataAnalyze.resize(1282, 693)
         self.centralwidget = QtWidgets.QWidget(DataAnalyze)
         self.centralwidget.setObjectName("centralwidget")
         self.lineEdit_FileDir = QtWidgets.QLineEdit(self.centralwidget)
@@ -41,12 +41,12 @@ class Ui_DataAnalyze(object):
         self.pushButton_Process.setGeometry(QtCore.QRect(700, 70, 93, 28))
         self.pushButton_Process.setObjectName("pushButton_Process")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
-        self.tabWidget.setGeometry(QtCore.QRect(10, 100, 1071, 561))
+        self.tabWidget.setGeometry(QtCore.QRect(200, 100, 1071, 571))
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.tab)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 1041, 511))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 1041, 521))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -61,6 +61,9 @@ class Ui_DataAnalyze(object):
         self.comboBox_Type = QtWidgets.QComboBox(self.centralwidget)
         self.comboBox_Type.setGeometry(QtCore.QRect(240, 70, 87, 22))
         self.comboBox_Type.setObjectName("comboBox_Type")
+        self.listWidget_KeyName = QtWidgets.QListWidget(self.centralwidget)
+        self.listWidget_KeyName.setGeometry(QtCore.QRect(10, 100, 181, 571))
+        self.listWidget_KeyName.setObjectName("listWidget_KeyName")
         DataAnalyze.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(DataAnalyze)
         self.statusbar.setObjectName("statusbar")
