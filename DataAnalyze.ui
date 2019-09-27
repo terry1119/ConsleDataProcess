@@ -56,7 +56,7 @@
    <widget class="QProgressBar" name="progressBar">
     <property name="geometry">
      <rect>
-      <x>800</x>
+      <x>980</x>
       <y>70</y>
       <width>281</width>
       <height>23</height>
@@ -66,36 +66,10 @@
      <number>24</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_CanID">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>70</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>KEY：</string>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_Key">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>70</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_Process">
     <property name="geometry">
      <rect>
-      <x>700</x>
+      <x>880</x>
       <y>70</y>
       <width>93</width>
       <height>28</height>
@@ -115,11 +89,11 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Plot</string>
+      <string>折线图</string>
      </attribute>
      <widget class="QWidget" name="verticalLayoutWidget">
       <property name="geometry">
@@ -135,7 +109,7 @@
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>Info</string>
+      <string>按值筛选结果</string>
      </attribute>
      <widget class="QTextEdit" name="textEdit">
       <property name="geometry">
@@ -148,16 +122,21 @@
       </property>
      </widget>
     </widget>
-   </widget>
-   <widget class="QComboBox" name="comboBox_Type">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>70</y>
-      <width>87</width>
-      <height>22</height>
-     </rect>
-    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>按横坐标筛选结果</string>
+     </attribute>
+     <widget class="QTextEdit" name="textEdit2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1061</width>
+        <height>531</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QListWidget" name="listWidget_KeyName">
     <property name="geometry">
@@ -168,6 +147,84 @@
       <height>571</height>
      </rect>
     </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>301</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_CanID">
+       <property name="text">
+        <string>KEY：</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_Key"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_Type"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>70</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_value">
+       <property name="text">
+        <string>值：大于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_value"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>596</x>
+      <y>71</y>
+      <width>211</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_x">
+       <property name="text">
+        <string>横坐标：大于</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_value2"/>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
