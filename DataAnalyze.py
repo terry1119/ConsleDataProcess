@@ -1,6 +1,9 @@
 import sys
 import os
 import csv
+if hasattr(sys, 'frozen'):
+    os.environ['PATH'] = sys._MEIPASS + ";" + os.environ['PATH']
+
 from PyQt5.QtWidgets import (QFileDialog, QMainWindow, QApplication, QMessageBox, QSpinBox, QGridLayout,QSizePolicy)
 from PyQt5 import QtGui
 
